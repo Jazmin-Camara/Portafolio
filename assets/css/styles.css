@@ -163,6 +163,11 @@ header>h1{
     z-index: -40;
 }
 
+@media screen and (min-width:450px){
+    .logo-redes{
+        width: 50px;
+    }
+}
 
 @media screen and (min-width:600px){
     header>h1{
@@ -177,9 +182,6 @@ header>h1{
         top: 300px;
     }
 
-    .logo-redes{
-        width: 50px;
-    }
 }
 
 
