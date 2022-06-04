@@ -46,7 +46,11 @@ nav{
 }
 
 .home{
-    color: black;
+    color: #F1A600;
+}
+
+ul>a{
+    text-decoration: none;
 }
 
 input#menu-hamburguesa{
@@ -369,8 +373,10 @@ h3{
     align-self: center;
 }
 
+/*Portafolio*/
+
 .portafolio{
-    margin-top: 25px;
+    margin-top: 45px;
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -394,12 +400,10 @@ h3{
     width: 70%;
     padding: 25px;
     position: relative;
-
 }
 
 .image-port{
     width: 70%;
-
 }
 
 .yellow-square{
@@ -412,12 +416,81 @@ h3{
     top: 2%;
 }
 
+.gray-square{
+    background-color: #242635;
+    width: 50vw;
+    height: 30vw;
+    z-index: -20;
+    position: absolute;
+    left: 15%;
+    top: 2%;
+}
 
+
+/*Contacto*/
+
+.seccion-contacto{
+    background-image: url(../imagenes/Rectangle\ 33-1.svg);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    margin: 0 2px 30px 2px;
+    position: relative;
+}
+
+.h2-contacto{
+    margin: 40px;
+}
+
+.item26{
+    align-self: flex-start;
+    height: 60vw;
+    max-height: 200px;
+    width: 50%;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.item27{
+    align-self: flex-end;
+    height: 60vw;
+    max-height: 200px;
+    width: 50%;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.img-contacto{
+    width: 90%;
+    max-width: 120px;
+}
+
+.texto-contacto{
+    font-size: 10px;
+}
 
 
 
 
 /*Media queries*/
+@media screen and (min-width:380px){
+    .texto-contacto{
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:450px){
+    .logo-redes{
+        width: 50px;
+    }
+}
 
 @media screen and (min-width:580px) {
     .first-square{
@@ -433,19 +506,7 @@ h3{
     }
 }
 
-@media screen and (min-width:800px) {
-    label{
-        display: none;
-    }
 
-    input#menu-hamburguesa ~ ul{
-        position: static;
-        display: flex;
-        flex-direction: row;
-        height: auto;
-        justify-content: flex-end;
-    }
-}
 
 @media screen and (min-width: 709px){
     .img-header{
@@ -464,13 +525,20 @@ h3{
     
 }
 
-@media screen and (min-width:450px){
-    .logo-redes{
-        width: 50px;
-    }
-}
 
 @media screen and (min-width:800px){    
+    label{
+        display: none;
+    }
+
+    input#menu-hamburguesa ~ ul{
+        position: static;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: flex-end;
+    }
+
     header>h1{
         font-size: 80px;
     }
@@ -513,6 +581,9 @@ h3{
         font-size: 45px;
     }
 
+    .texto-contacto{
+        font-size: 20px;
+    }
 }
 
 @media screen and (min-width:950px){
