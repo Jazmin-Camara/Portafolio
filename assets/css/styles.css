@@ -480,6 +480,13 @@ h3{
 
 
 /*Media queries*/
+
+@media screen and (max-width:311px){
+    .experiencia{
+        column-gap: 2px;
+    }
+}
+
 @media screen and (min-width:380px){
     .texto-contacto{
         font-size: 15px;
