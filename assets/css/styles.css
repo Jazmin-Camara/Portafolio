@@ -12,7 +12,8 @@ body{
 }
 
 header{
-    position: relative;
+   position: relative;
+   margin: 0 0 10px 0;
 }
 
 /*background gray square*/
@@ -87,7 +88,7 @@ input#menu-hamburguesa:checked ~ ul{
 }
 
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:800px) {
     label{
         display: none;
     }
@@ -105,8 +106,8 @@ input#menu-hamburguesa:checked ~ ul{
 
 header>h1{
     display: inline-block;
-    font-size: 60px;
-    margin: 1rem;
+    font-size: 50px;
+    margin: 1rem .5rem;
     position: absolute;
     top: 50px
 }
@@ -115,7 +116,7 @@ header>h1{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem 0 1rem .5rem;
     width: 70vw;
     position: absolute;
     top: 150px;
@@ -134,7 +135,6 @@ header>h1{
 .redes{
     display: flex;
     flex-direction: row;
-    width: 40%;
     position: absolute;
     margin: 0 1rem;
     top: 270px;
@@ -142,25 +142,25 @@ header>h1{
 }
 
 .logo-redes{
-    width: 35px;
+    width: 100%;
     max-width: 100px;
-    justify-content: space-between;
     margin: 5px;
 }
 
 .social-media{
-   width: 100%;
-   margin: 0;
-}
+    width: 100%;
+    margin: 0;
+ }
 
 .foto-perfil{
     display: flex;
-    width: 200px;
-    height: 250px;
     position: absolute;
     right: 0;
-    bottom: 10px;
+    top: 90px;
     z-index: -40;
+    width: 40%;
+    min-width: 230px;
+    max-width: 500px;
 }
 
 @media screen and (min-width:450px){
@@ -169,19 +169,45 @@ header>h1{
     }
 }
 
-@media screen and (min-width:600px){
+@media screen and (min-width:800px){    
     header>h1{
         font-size: 80px;
     }
-
+    
     .texto-header{
-        font-size: 25px;
+        font-size: 35px;
     }
     
     .redes{
-        top: 300px;
+        top: 400px;
+    }
+
+    .logo-redes{
+        width: 70px;
+        margin: 10px;
     }
 
 }
 
 
+/*Hacer crecer a los 1000 letra, acomodar seccion acerca de mi*/
+
+
+.acerca-de-mi{
+    position: relative;
+    flex-direction: row;
+    text-align: center;
+    background-image: url(../imagenes/Rectangle\ 33.svg);
+    background-size: cover;
+    margin: 0%;
+    width: 100%;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.logo-academlo{
+    width: 30%;
+    max-width: 80px;
+}
