@@ -13,7 +13,7 @@ body{
 
 header{
    position: relative;
-   margin: 0 0 10px 0;
+   margin: 0 10px 0px 10px;
    overflow: hidden;
 }
 
@@ -115,7 +115,7 @@ header>h1{
     flex-direction: row;
     position: absolute;
     margin: .2rem 1rem;
-    top: 270px;
+    top: 280px;
     max-width: 300px;
 }
 
@@ -177,7 +177,7 @@ h2{
 /*Experiencia*/
 
 .experiencia{
-    margin-top: 10px;
+   margin: 10px 10px 0 0;
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: center; 
@@ -264,8 +264,7 @@ h3{
 /*Habilidades*/
 
 .seccion-habilidades{
-    margin-top: 50px;
-    margin-left: 1rem;
+    margin: 50px 10px 0 1rem;
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center; 
